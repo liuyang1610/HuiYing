@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/title" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="人性善恶谁能判断，善恶只在一瞬间" android:maxLines="1" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/nesbg" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:id="@+id/newsone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@+id/newstwo" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@+id/newthree" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/tubiao" android:background="@drawable/dz" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:id="@+id/plnum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="44" android:layout_toRightOf="@+id/tubiao" android:layout_centerVertical="true" />
+        <TextView android:textSize="11.0sp" android:id="@+id/times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="1小时前" android:layout_toRightOf="@+id/plnum" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/hengxian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

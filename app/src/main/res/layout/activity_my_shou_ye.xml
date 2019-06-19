@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragmetn"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40.0dip"
+        android:background="@color/wight" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/hengxian" />
+
+        <LinearLayout
+            android:id="@+id/footall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:background="@color/wight"
+            android:orientation="horizontal"
+            android:paddingBottom="2.0dip"
+            android:paddingTop="2.0dip">
+
+            <RelativeLayout
+                android:id="@+id/goupiao"
+                android:layout_width="0.0dip"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0">
+
+                <RelativeLayout
+                    android:id="@+id/cehis"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="23.0dip">
+
+                    <ImageView
+                        android:id="@+id/footimage"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5.0dip"
+                        android:alpha="1.0"
+                        android:background="@drawable/goupiao1"
+                        android:focusableInTouchMode="true" />
+
+                    <TextView
+                        android:id="@+id/foottext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/footimage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3.0dip"
+                        android:text="购票"
+                        android:textSize="10.0sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fangying"
+                android:layout_width="0.0dip"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0">
+
+                <RelativeLayout
+                    android:id="@+id/cehisxiao"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="23.0dip">
+
+                    <ImageView
+                        android:id="@+id/shouyeimage"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5.0dip"
+                        android:background="@drawable/fangyin" />
+
+                    <TextView
+                        android:id="@+id/shouyetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3.0dip"
+                        android:text="放映"
+                        android:textSize="10.0sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/xinwen"
+                android:layout_width="0.0dip"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0">
+
+                <RelativeLayout
+                    android:id="@+id/cehisfind"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="23.0dip">
+
+                    <ImageView
+                        android:id="@+id/talkiamge"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5.0dip"
+                        android:background="@drawable/xinwen" />
+
+                    <TextView
+                        android:id="@+id/talktext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/talkiamge"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3.0dip"
+                        android:text="新闻"
+                        android:textSize="10.0sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wode"
+                android:layout_width="0.0dip"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0">
+
+                <RelativeLayout
+                    android:id="@+id/cehisyue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="23.0dip">
+
+                    <ImageView
+                        android:id="@+id/findimage"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5.0dip"
+                        android:background="@drawable/wd" />
+
+                    <TextView
+                        android:id="@+id/findtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/findimage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3.0dip"
+                        android:text="我的"
+                        android:textSize="10.0sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

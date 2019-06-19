@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black">
+
+    <com.limei.movieapp.huiying.view.MyJzvdStd
+        android:id="@+id/videoplayer"
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip" />
+
+    <ImageView
+        android:id="@+id/fanhui"
+        android:layout_width="20.0dip"
+        android:layout_height="20.0dip"
+        android:layout_margin="5.0dip"
+        android:background="@drawable/fanhuiwi" />
+</RelativeLayout>

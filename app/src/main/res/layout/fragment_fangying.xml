@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wight" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/lineblack" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <TextView android:textSize="12.0sp" android:textColor="@color/wight" android:id="@+id/zhengzai" android:background="@drawable/banbuttonblack" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在放映" />
+            <TextView android:textSize="12.0sp" android:id="@+id/jijiang" android:background="@drawable/banbuttonwight" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成放映" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/hengxian" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="5.0dip" />
+    <android.support.design.widget.TabLayout android:id="@+id/tablayout" android:background="#ffffffff" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true" />
+    <android.support.v4.view.ViewPager android:id="@+id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80.0dip">
+
+    <ImageView
+        android:id="@+id/neshua"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:background="@drawable/xx_tx" />
+
+    <TextView
+        android:id="@+id/nestitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/neshua"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_toLeftOf="@+id/times"
+        android:layout_toRightOf="@+id/neshua"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="官方消息" />
+
+    <TextView
+        android:id="@+id/nescontent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/neshua"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="50.0dip"
+        android:layout_toRightOf="@+id/neshua"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="欢迎使用此app，一起来吧！！"
+        android:textSize="12.0sp" />
+
+    <TextView
+        android:id="@+id/times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/neshua"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:text="7小时前"
+        android:textSize="10.0dip" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/hengxian" />
+</RelativeLayout>

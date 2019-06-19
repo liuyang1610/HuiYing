@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/dingdanhao" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单号：1865598112385" />
+        <TextView android:textColor="@color/black" android:id="@+id/zhengpiao" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="交易成功" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/hengxian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textColor="@color/black" android:id="@+id/movename" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="狗咬狗" />
+    <TextView android:textSize="13.0sp" android:id="@+id/nums" android:paddingLeft="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="总数：1张" />
+    <TextView android:textSize="13.0sp" android:id="@+id/movejiage" android:paddingLeft="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="总价：￥25" />
+    <TextView android:textSize="13.0sp" android:id="@+id/youxiaoqi" android:paddingLeft="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="有效日期：2018-05-08至2018-06-08" />
+    <TextView android:textSize="13.0sp" android:id="@+id/goupaioriqi" android:paddingLeft="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="购票日期：2018-05-25 08:00" />
+    <View android:background="@color/hengxian" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+    <TextView android:id="@+id/piaohao" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="票号：156584655655" />
+    <View android:background="@color/hengxian" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

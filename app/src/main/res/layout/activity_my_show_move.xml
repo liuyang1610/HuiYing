@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/releasd"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <com.limei.movieapp.huiying.view.MyJzvdStd
+                    android:id="@+id/videoplayer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:paddingTop="10.0dip">
+
+                <ImageView
+                    android:id="@+id/moviebg"
+                    android:layout_width="60.0dip"
+                    android:layout_height="90.0dip"
+                    android:background="#ffeeeeee" />
+
+                <TextView
+                    android:id="@+id/movename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_toRightOf="@+id/moviebg"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/movezhuyan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/movename"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_toLeftOf="@+id/goupiao"
+                    android:layout_toRightOf="@+id/moviebg"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/movezongtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/movezhuyan"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_toRightOf="@+id/moviebg"
+                    android:text=""
+                    android:textSize="11.0sp" />
+
+                <TextView
+                    android:id="@+id/movetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/movezongtime"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_toRightOf="@+id/moviebg"
+                    android:text=""
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/moveshangyingdiqu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/movezongtime"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_toRightOf="@+id/movetime"
+                    android:text=""
+                    android:textSize="12.0sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_below="@+id/moviebg"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@color/hengxian" />
+            </RelativeLayout>
+
+            <cn.carbs.android.expandabletextview.library.ExpandableTextView
+                android:id="@+id/etv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5.0dip"
+                android:lineSpacingExtra="5.0dip"
+                android:padding="10.0dip"
+                android:textColor="@color/black"
+                android:textSize="12.0dip"
+                app:etv_MaxLinesOnShrink="5" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_below="@+id/moviebg"
+                android:layout_marginTop="5.0dip"
+                android:background="@color/hengxian" />
+
+            <include
+                layout="@layout/layout_myshow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50.0dip" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/titless"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10.0dip">
+
+        <ImageView
+            android:id="@+id/fanhui"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/fanhui" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="预告片"
+            android:textColor="@color/wight"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/startgoupiao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:gravity="center"
+        android:padding="10.0dip"
+        android:text="购票"
+        android:textColor="@color/wight"
+        android:textSize="16.0dip" />
+</RelativeLayout>

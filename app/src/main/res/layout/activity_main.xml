@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/denglu_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10.0dip"
+        android:text="登录"
+        android:textColor="@color/wight"
+        android:textSize="17.0dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_marginTop="120.0dip"
+        android:padding="5.0dip">
+
+        <ImageView
+            android:id="@+id/shoujihao"
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/denglu_zhanghao" />
+
+        <EditText
+            android:id="@+id/phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toRightOf="@+id/shoujihao"
+            android:background="@null"
+            android:hint="请输入您的手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="5.0dip"
+            android:textColor="@color/wight"
+            android:textColorHint="@color/wight"
+            android:textSize="13.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/hengxian" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_marginTop="30.0dip"
+        android:padding="5.0dip">
+
+        <ImageView
+            android:id="@+id/yanzhengma"
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/denglu_mima" />
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toRightOf="@+id/yanzhengma"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:padding="5.0dip"
+            android:textColor="@color/wight"
+            android:textColorHint="@color/wight"
+            android:textSize="13.0sp" />
+
+        <TextView
+            android:id="@+id/getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/buttonstyle"
+            android:paddingBottom="5.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="5.0dip"
+            android:text="获取验证码"
+            android:textSize="13.0dip" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/hengxian" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="90.0dip"
+        android:background="@drawable/buttonwightsmall"
+        android:gravity="center"
+        android:padding="10.0dip"
+        android:text="登录" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70.0dip"
+        android:gravity="center"
+        android:text="-----------  第三方登录  -----------"
+        android:textColor="@color/wight"
+        android:textSize="12.0sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20.0dip">
+
+        <ImageView
+            android:id="@+id/weixin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/weixin" />
+
+        <ImageView
+            android:id="@+id/qq"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50.0dip"
+            android:background="@drawable/qq" />
+    </LinearLayout>
+</LinearLayout>

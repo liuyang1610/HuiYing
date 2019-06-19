@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/putongtitle" />
+        <RelativeLayout android:background="@color/wight" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="允许运营商网络下载" android:layout_centerVertical="true" />
+            <Switch android:id="@+id/xiazai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <RelativeLayout android:background="@color/wight" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="新消息通知" android:layout_centerVertical="true" />
+            <Switch android:id="@+id/newtong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <RelativeLayout android:id="@+id/qinglihuan" android:background="@color/wight" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="清除缓存" android:layout_centerVertical="true" />
+            <TextView android:id="@+id/huancun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="1.9MB" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="16.0dip" android:textColor="@color/wight" android:gravity="center" android:id="@+id/startgoupiao" android:background="@color/black" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="退出登录" android:layout_alignParentBottom="true" />
+</RelativeLayout>

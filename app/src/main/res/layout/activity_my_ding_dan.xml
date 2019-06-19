@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/putongtitle" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="45dp"
+        android:id="@+id/piaojiashow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/biaoti" />
+
+    <RelativeLayout
+        android:id="@+id/nulldata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150.0dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wudata" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/images"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20.0dip"
+            android:text="暂无数据" />
+    </RelativeLayout>
+</RelativeLayout>

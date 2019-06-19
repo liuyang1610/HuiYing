@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/fanhui"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13.0dip"
+            android:background="@drawable/fanhui" />
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="270.0dip"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/buttonstyle"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5.0dip"
+            android:textColor="@color/wight"
+            android:textSize="16.0sp">
+
+            <ImageView
+                android:id="@+id/sou"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shouye_shousuo" />
+
+            <EditText
+                android:id="@+id/sousuocon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/sou"
+                android:background="@null"
+                android:hint="搜索电影"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:lines="1"
+                android:padding="1.0dip"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rightss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:padding="5.0dip"
+            android:text="搜索"
+            android:textColor="@color/wight" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text="热门搜索" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/search_page"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="20.0dip"
+            android:padding="10.0dip"
+            zhy:max_select="5" />
+    </RelativeLayout>
+</LinearLayout>

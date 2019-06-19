@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/piaohao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip"
+            android:text="票号：" />
+
+        <TextView
+            android:id="@+id/zhengpiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10.0dip"
+            android:text="赠票"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/hengxian" />
+
+    <TextView
+        android:id="@+id/movename"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10.0dip"
+        android:text="狗咬狗"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/nums"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="10.0dip"
+        android:text=""
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/movejiage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="10.0dip"
+        android:text="总价："
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/youxiaoqi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="10.0dip"
+        android:text="有效日期："
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/goupaioriqi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="10.0dip"
+        android:text="购票日期："
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/zengsongtime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="10.0dip"
+        android:text="赠票日期："
+        android:textSize="13.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/hengxian" />
+
+    <TextView
+        android:id="@+id/zhuangtai"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10.0dip"
+        android:text="状态：" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10.0dip"
+        android:background="@color/hengxian" />
+</LinearLayout>

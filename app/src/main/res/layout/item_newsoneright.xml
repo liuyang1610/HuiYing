@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/nesbg" android:layout_width="120.0dip" android:layout_height="75.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentRight="true" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="人性善恶谁能判断，善恶只在一瞬间" android:maxLines="2" android:layout_toLeftOf="@+id/nesbg" android:lineSpacingExtra="5.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignBottom="@+id/nesbg">
+        <ImageView android:id="@+id/tubiao" android:background="@drawable/dz" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:id="@+id/plnum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="44" android:layout_toRightOf="@+id/tubiao" android:layout_centerVertical="true" />
+        <TextView android:textSize="11.0sp" android:id="@+id/times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="1小时前" android:layout_toRightOf="@+id/plnum" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/hengxian" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@+id/nesbg" />
+</RelativeLayout>

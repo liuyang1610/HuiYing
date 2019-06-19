@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/head" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@+id/fanhui" android:background="@drawable/fanhuiwi" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/wight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详情" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/hengxian" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@+id/head" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_below="@+id/head">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:id="@+id/biaoti" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip" android:text="" />
+            <TextView android:id="@+id/timess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+            <TextView android:textColor="@color/black" android:id="@+id/xiangqing" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip" android:text="" android:lineSpacingExtra="5.0dip" />
+            <RelativeLayout android:layout_gravity="center" android:id="@+id/zan" android:background="@drawable/buttonbluell" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="20.0dip">
+                <ImageView android:id="@+id/znatu" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <View android:background="@color/hengxian" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@+id/ss" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignBottom="@+id/nesbg" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/tubiao" android:background="@drawable/pl" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/plnum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="44" android:layout_toRightOf="@+id/tubiao" />
+            <ImageView android:background="@drawable/dz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@+id/plnum" />
+            <TextView android:textSize="15.0sp" android:id="@+id/times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="445" />
+        </RelativeLayout>
+        <EditText android:textSize="15.0sp" android:id="@+id/pinglun" android:background="@color/hengxian" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:hint="写评论" android:layout_toLeftOf="@+id/ss" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

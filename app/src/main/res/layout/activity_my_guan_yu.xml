@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/hengxian" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/putongtitle" />
+    <RelativeLayout android:background="@color/wight" android:layout_width="fill_parent" android:layout_height="175.0dip">
+        <ImageView android:layout_gravity="center" android:id="@+id/asda" android:background="@drawable/timg" android:layout_width="85.0dip" android:layout_height="85.0dip" android:layout_marginTop="40.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="V 1.0.0" android:layout_below="@+id/asda" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:background="@color/hengxian" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:id="@+id/kefudianhua" android:background="@color/wight" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="客服电话" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/you" android:background="@drawable/youjiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="400-500-99865" android:layout_toLeftOf="@+id/you" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/xieyi" android:background="@color/wight" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="用户服务使用协议" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/you1" android:background="@drawable/youjiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

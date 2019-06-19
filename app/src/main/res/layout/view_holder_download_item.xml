@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/icon"
+            android:layout_width="100.0dip"
+            android:layout_height="70.0dip"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="8.0dip" />
+
+        <Button
+            android:id="@+id/action"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16.0dip"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.493" />
+
+        <ProgressBar
+            android:id="@+id/progressBars"
+            style="@style/ProgressBar_Mini"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8.0dip"
+            android:layout_toLeftOf="@+id/action"
+            android:layout_toRightOf="@+id/icon" />
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBars"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/action" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="120.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/icon"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBars"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/hengxian" />
+</LinearLayout>
